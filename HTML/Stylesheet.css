@@ -1,0 +1,53 @@
+nav {
+    background-color: #030039;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none; 
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+a {
+    color: white;
+    font-family: cursive;
+    padding: 10px;
+}
+
+li a:hover {
+    background: white;
+    color: #030039;
+}
+
+.concept {
+    color: #030039;
+}
+
+.idk {
+    color: black; 
+}
+
+.whatever {
+    color: blue; 
+}
+
+.c1 {
+    color: red;
+}
+
+.c2 {
+    color: yellow;
+}
+
+#topic_list {
+    color: pink;
+}
+
+#msg {
+    color: purple;
+}

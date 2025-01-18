@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS2</title>
+
+    <link rel = "Stylesheet" href = "Stylesheet.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href = "ROS2.html">Concept</a></li>
+            <li><a href = "#">Setup</a></li>
+            <li><a href = "#">Topic</a></li>
+            <li><a href = "#">Resource</a></li>
+        </ul>
+    </nav>
+
+    <div class = "concept">
+        <h1>understanding the concept</h1>
+
+            <p>One of the primary ways for nodes to communicate in ROS2 is via topic. Here's a breakdown of the key concepts: </p>
+
+            <h2 class = "idk">Topic</h2>
+                <ul id = "topic_list">
+                    <li>A topic is a named data channel that nodes use to communicate. Topics are identified by unique names.
+                    </li>
+                    <li>Data flowing through a topic is accessible to any niode that subscribes to it, allowing multiple nodes to share and receive informationj on the same topics.</li>
+                </ul>
+
+            <h2 class = "whatever">Message</h2>
+                <ul id = "msg">
+                    <li>A message is a single unit of data sent over a topic. Each message has a defined structure, known as a message type or msg, which determines the format and types of the data fields it can contain.</li>
+                    <li>Examples of message types include "std_msgs/String" or "sensor_msgs/Temperature"</li>
+                </ul>
+
+            <h2 class = "c1">Publisher</h2>
+                <p>A publisher is a node that sends data to a topic. When a node publishes a message, it writes this data to the topic, making it available for other nodes to read.</p>
+
+            <h2 class = "c2">Subscriber</h2>
+                <p>A subscriber is a node that reads the data from a topic. By subscribing to a topic, the node is notified whenever a new message is published, and it can then access and use the data.</p>
+    </div>
+</body>
+</html>
