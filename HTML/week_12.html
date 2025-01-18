@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idk whatever</title>
+
+    <style> 
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>PWM on STM32</h1>
+
+    <div>
+        <h2>Understandind PWM</h2>
+        <p><strong>PWM</strong> stands for Pulse Width Modulation. It is a type of digital electrical signal which is periodic in nature, with a rectangular waveform.</p>
+
+        <img src = "PWM Wave.jpg" alt = "This is a graph of PWM wave">
+
+        <p>Key terms:
+            <ul><!--unordered list: is illustrated as bullet points-->
+                <!--b tag: makes bold text-->
+                <li><i>Period (Tp):</i> Time taken to complete one cycle.</li>
+                <li><i>Duty Cycle:</i> The proportion of the period for which the signal stays high. It’s calculated as: Duty cycle % = (Ton/ Tp) X 100</li>
+            </ul>
+
+            <p><em><mark>Frequency</mark> is the number of times the waveform repeats in one second, <small>given by:</small><del>F = 1/T</del> <ins>F = 1/T<sub>p</sub></ins> .</em></p>
+        </p>
+
+        <p>In mathematics, the area of a square is given by \( a^2 \), where <sup>2</sup> is the exponent.</p>
+        
+        2<sup>3</sup>
+    </div>
+
+    <dl>
+        <dt>LED brightness</dt>
+        <dd>Adjusting duty cycle dims or brightens the LED.</dd>
+
+        <dt>Motor speed control</dt>
+        <dd>Changing duty cycle varies speed.</dd>
+
+        <dt>Servo motor</dt>
+        <dd>Specific duty cycle set exact position.</dd>
+    </dl>
+    
+    <h2>Timer peripheral in STM32 Blue pill</h2>
+
+    <table> 
+        <tr>
+            <th>Time type</th>
+            <th>Timer Name</th>
+            <th>Features</th>
+            <th>Clock frequency input</th>
+        </tr>
+
+        <tr>
+            <td>Advanced timer</td>
+            <td>TIM1</td>
+            <td>
+                <ul>
+                    <li>Supports all 4 modes</li>
+                    <li>Provides complementary outputs</li>
+                    <li>Includes repetition counter for register updates after a set number of cycles</li>
+                </ul>
+            </td>
+            <td>Independence of other timers</td>
+        </tr>
+
+        <tr> 
+            <td>General-purpose timer</td>
+            <td>TIM2, TIM3, TIM4</td>
+            <td>
+                <ul>
+                    <li>Supports all 4 modes</li>
+                    <li>Does not provide complementary outputs or repetition counters</li>
+                </ul>
+            </td>
+            <td>Independent of TIM1</td>
+        </tr>
+    </table>
+</body>
+</html>
